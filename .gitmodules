@@ -1,0 +1,12 @@
+[submodule "tools/routersploit"]
+	path = tools/routersploit
+	url = https://github.com/threat9/routersploit
+[submodule "tools/exploitdb"]
+	path = tools/exploitdb
+	url = https://github.com/offensive-security/exploitdb
+[submodule "routers/OpenWRTInvasion"]
+	path = routers/OpenWRTInvasion
+	url = https://github.com/acecilia/OpenWRTInvasion
+[submodule "tools/Router-Exploit-Shovel"]
+	path = tools/Router-Exploit-Shovel
+	url = https://github.com/arthastang/Router-Exploit-Shovel
