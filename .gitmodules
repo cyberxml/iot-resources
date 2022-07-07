@@ -13,3 +13,9 @@
 [submodule "tools/IoTCrusher"]
 	path = tools/IoTCrusher
 	url = https://github.com/OpCode41/IoTCrusher
+[submodule "routers/CiscoRV320Dump"]
+	path = routers/CiscoRV320Dump
+	url = https://github.com/0x27/CiscoRV320Dump
+[submodule "routers/CiscoExploit"]
+	path = routers/CiscoExploit
+	url = https://github.com/k8gege/CiscoExploit
