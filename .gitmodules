@@ -22,3 +22,6 @@
 [submodule "routers/dlkploit600"]
 	path = routers/dlkploit600
 	url = https://github.com/halencarjunior/dlkploit600
+[submodule "routers/zenith"]
+	path = routers/zenith
+	url = https://github.com/0vercl0k/zenith
