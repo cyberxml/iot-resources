@@ -19,3 +19,6 @@
 [submodule "routers/CiscoExploit"]
 	path = routers/CiscoExploit
 	url = https://github.com/k8gege/CiscoExploit
+[submodule "routers/dlkploit600"]
+	path = routers/dlkploit600
+	url = https://github.com/halencarjunior/dlkploit600
