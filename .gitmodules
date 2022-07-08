@@ -28,3 +28,9 @@
 [submodule "routers/zyxel-exploit"]
 	path = routers/zyxel-exploit
 	url = https://github.com/Notionned101/exploit
+[submodule "routers/CVE-2022-30525-Reverse-Shell"]
+	path = routers/CVE-2022-30525-Reverse-Shell
+	url = https://github.com/Chocapikk/CVE-2022-30525-Reverse-Shell
+[submodule "routers/TEW-652_CVE-2019-11399"]
+	path = routers/TEW-652_CVE-2019-11399
+	url = https://github.com/pr0v3rbs/CVE
