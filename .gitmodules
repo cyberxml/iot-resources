@@ -25,3 +25,6 @@
 [submodule "routers/zenith"]
 	path = routers/zenith
 	url = https://github.com/0vercl0k/zenith
+[submodule "routers/zyxel-exploit"]
+	path = routers/zyxel-exploit
+	url = https://github.com/Notionned101/exploit

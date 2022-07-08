@@ -16,3 +16,16 @@ Teramaster FS-420
 
 Cisco RV320
 https://github.com/0x27/CiscoRV320Dump
+
+
+D-Link.Realtek.SDK.Miniigd.UPnP.SOAP.Command.Execution
+D-Link DIR-501 miniigd v1.08 and prior
+D-Link DIR-515 miniigd v1.08 and prior
+D-Link DIR-600L miniigd v1.08 and prior
+D-Link DIR-605L miniigd v1.08 and prior
+D-Link DIR-615 miniigd v1.08 and prior
+D-Link DIR-619L miniigd v1.08 and prior
+D-Link DIR-809 miniigd v1.07 and prior
+D-Link DIR-900L miniigd v1.08 and prior
+D-Link DIR-905L miniigd v1.08 and prior
+Trendnet TEW-731BR miniigd v1.08 and prior
