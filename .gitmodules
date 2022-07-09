@@ -34,3 +34,6 @@
 [submodule "routers/TEW-652_CVE-2019-11399"]
 	path = routers/TEW-652_CVE-2019-11399
 	url = https://github.com/pr0v3rbs/CVE
+[submodule "tools/PayloadsAllTheThings"]
+	path = tools/PayloadsAllTheThings
+	url = https://github.com/swisskyrepo/PayloadsAllTheThings
