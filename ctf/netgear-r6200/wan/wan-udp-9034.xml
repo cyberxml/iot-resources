@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Fri Jul  8 11:14:16 2022 as: nmap -sU -p 9034 -oA wan-udp-9034 10.11.0.56 -->
+<nmaprun scanner="nmap" args="nmap -sU -p 9034 -oA wan-udp-9034 10.11.0.56" start="1657300456" startstr="Fri Jul  8 11:14:16 2022" version="7.60" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="1" services="9034"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1657300456" endtime="1657300457"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.0.56" addrtype="ipv4"/>
+<address addr="20:E5:2A:19:3F:3A" addrtype="mac" vendor="Netgear"/>
+<hostnames>
+<hostname name="R6200" type="PTR"/>
+</hostnames>
+<ports><port protocol="udp" portid="9034"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="5831" rttvar="5831" to="100000"/>
+</host>
+<runstats><finished time="1657300457" timestr="Fri Jul  8 11:14:17 2022" elapsed="0.59" summary="Nmap done at Fri Jul  8 11:14:17 2022; 1 IP address (1 host up) scanned in 0.59 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

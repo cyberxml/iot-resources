@@ -1,0 +1,8 @@
+# Nmap 7.60 scan initiated Fri Jul  8 16:13:42 2022 as: nmap -T4 -sV -oA wan-tcp 10.11.0.42
+Nmap scan report for Cisco33941 (10.11.0.42)
+Host is up (0.00023s latency).
+All 1000 scanned ports on Cisco33941 (10.11.0.42) are filtered
+MAC Address: B4:75:0E:38:CA:D1 (Belkin International)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  8 16:14:04 2022 -- 1 IP address (1 host up) scanned in 21.70 seconds

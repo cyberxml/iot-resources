@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Jul  8 13:29:34 2022 as: nmap --script=http-headers -oA http-header 10.11.0.2
+Host: 10.11.0.2 (routerbf79c8)	Status: Up
+Host: 10.11.0.2 (routerbf79c8)	Ports: 22/open/tcp//ssh///, 443/open/tcp//https///, 1723/open/tcp//pptp///, 8007/open/tcp//ajp12///, 8008/open/tcp//http///	Ignored State: filtered (995)
+# Nmap done at Fri Jul  8 13:29:55 2022 -- 1 IP address (1 host up) scanned in 20.52 seconds

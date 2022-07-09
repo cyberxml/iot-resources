@@ -1,0 +1,49 @@
+# Nmap 7.60 scan initiated Fri Jul  8 15:21:34 2022 as: nmap -T4 -sV -oA lan-tcp 192.168.1.1
+Nmap scan report for _gateway (192.168.1.1)
+Host is up (0.0082s latency).
+Not shown: 992 closed ports
+PORT      STATE SERVICE     VERSION
+53/tcp    open  domain      dnsmasq 2.15-OpenDNS-1
+80/tcp    open  http?
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+5000/tcp  open  upnp?
+8200/tcp  open  trivnet1?
+8888/tcp  open  telnet
+20005/tcp open  btx?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8888-TCP:V=7.60%I=7%D=7/8%Time=62C89FE6%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,88,"\xff\xfd\x01\xff\xfd\x1f\xff\xfd!\xff\xfb\x01\xff\xfb\x03\r\r\n\r
+SF:\n\r\nBusyBox\x20v1\.7\.2\x20\(2016-12-23\x2019:20:54\x20CST\)\x20built
+SF:-in\x20shell\x20\(ash\)\r\nEnter\x20'help'\x20for\x20a\x20list\x20of\x2
+SF:0built-in\x20commands\.\r\n\r\n#\x20")%r(GetRequest,B7,"\xff\xfd\x01\xf
+SF:f\xfd\x1f\xff\xfd!\xff\xfb\x01\xff\xfb\x03\r\r\n\r\n\r\nBusyBox\x20v1\.
+SF:7\.2\x20\(2016-12-23\x2019:20:54\x20CST\)\x20built-in\x20shell\x20\(ash
+SF:\)\r\nEnter\x20'help'\x20for\x20a\x20list\x20of\x20built-in\x20commands
+SF:\.\r\n\r\n#\x20GET\x20/\x20HTTP/1\.0\r\n/bin/sh:\x20GET:\x20not\x20foun
+SF:d\r\n#\x20\r\n#\x20")%r(HTTPOptions,BF,"\xff\xfd\x01\xff\xfd\x1f\xff\xf
+SF:d!\xff\xfb\x01\xff\xfb\x03\r\r\n\r\n\r\nBusyBox\x20v1\.7\.2\x20\(2016-1
+SF:2-23\x2019:20:54\x20CST\)\x20built-in\x20shell\x20\(ash\)\r\nEnter\x20'
+SF:help'\x20for\x20a\x20list\x20of\x20built-in\x20commands\.\r\n\r\n#\x20O
+SF:PTIONS\x20/\x20HTTP/1\.0\r\n/bin/sh:\x20OPTIONS:\x20not\x20found\r\n#\x
+SF:20\r\n#\x20")%r(FourOhFourRequest,DA,"\xff\xfd\x01\xff\xfd\x1f\xff\xfd!
+SF:\xff\xfb\x01\xff\xfb\x03\r\r\n\r\n\r\nBusyBox\x20v1\.7\.2\x20\(2016-12-
+SF:23\x2019:20:54\x20CST\)\x20built-in\x20shell\x20\(ash\)\r\nEnter\x20'he
+SF:lp'\x20for\x20a\x20list\x20of\x20built-in\x20commands\.\r\n\r\n#\x20GET
+SF:\x20/nice%20ports%2C/Tri%6Eity\.txt%2ebak\x20HTTP/1\.0\r\n/bin/sh:\x20G
+SF:ET:\x20not\x20found\r\n#\x20\r\n#\x20")%r(JavaRMI,8D,"\xff\xfd\x01\xff\
+SF:xfd\x1f\xff\xfd!\xff\xfb\x01\xff\xfb\x03\r\r\n\r\n\r\nBusyBox\x20v1\.7\
+SF:.2\x20\(2016-12-23\x2019:20:54\x20CST\)\x20built-in\x20shell\x20\(ash\)
+SF:\r\nEnter\x20'help'\x20for\x20a\x20list\x20of\x20built-in\x20commands\.
+SF:\r\n\r\n#\x20JRMIK")%r(GenericLines,90,"\xff\xfd\x01\xff\xfd\x1f\xff\xf
+SF:d!\xff\xfb\x01\xff\xfb\x03\r\r\n\r\n\r\nBusyBox\x20v1\.7\.2\x20\(2016-1
+SF:2-23\x2019:20:54\x20CST\)\x20built-in\x20shell\x20\(ash\)\r\nEnter\x20'
+SF:help'\x20for\x20a\x20list\x20of\x20built-in\x20commands\.\r\n\r\n#\x20\
+SF:r\n#\x20\r\n#\x20")%r(RPCCheck,88,"\xff\xfd\x01\xff\xfd\x1f\xff\xfd!\xf
+SF:f\xfb\x01\xff\xfb\x03\r\r\n\r\n\r\nBusyBox\x20v1\.7\.2\x20\(2016-12-23\
+SF:x2019:20:54\x20CST\)\x20built-in\x20shell\x20\(ash\)\r\nEnter\x20'help'
+SF:\x20for\x20a\x20list\x20of\x20built-in\x20commands\.\r\n\r\n#\x20");
+MAC Address: 20:E5:2A:19:3F:39 (Netgear)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  8 15:24:12 2022 -- 1 IP address (1 host up) scanned in 158.41 seconds

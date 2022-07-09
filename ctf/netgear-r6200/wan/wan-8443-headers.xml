@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Fri Jul  8 11:16:21 2022 as: nmap -sV -&#45;script=http-headers -p 8443 -oA wan-8443-headers 10.11.0.56 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script=http-headers -p 8443 -oA wan-8443-headers 10.11.0.56" start="1657300581" startstr="Fri Jul  8 11:16:21 2022" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1657300581" endtime="1657300680"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.0.56" addrtype="ipv4"/>
+<address addr="20:E5:2A:19:3F:3A" addrtype="mac" vendor="Netgear"/>
+<hostnames>
+<hostname name="R6200" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https-alt" method="table" conf="3"/><script id="http-headers" output="&#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="7626" rttvar="4932" to="100000"/>
+</host>
+<runstats><finished time="1657300680" timestr="Fri Jul  8 11:18:00 2022" elapsed="99.49" summary="Nmap done at Fri Jul  8 11:18:00 2022; 1 IP address (1 host up) scanned in 99.49 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

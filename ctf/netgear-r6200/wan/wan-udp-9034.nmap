@@ -1,0 +1,9 @@
+# Nmap 7.60 scan initiated Fri Jul  8 11:14:16 2022 as: nmap -sU -p 9034 -oA wan-udp-9034 10.11.0.56
+Nmap scan report for R6200 (10.11.0.56)
+Host is up (0.0058s latency).
+
+PORT     STATE         SERVICE
+9034/udp open|filtered unknown
+MAC Address: 20:E5:2A:19:3F:3A (Netgear)
+
+# Nmap done at Fri Jul  8 11:14:17 2022 -- 1 IP address (1 host up) scanned in 0.59 seconds

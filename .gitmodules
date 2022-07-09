@@ -37,3 +37,6 @@
 [submodule "tools/PayloadsAllTheThings"]
 	path = tools/PayloadsAllTheThings
 	url = https://github.com/swisskyrepo/PayloadsAllTheThings
+[submodule "routers/Linksys-Smart-WiFi-Information-Disclosure"]
+	path = routers/Linksys-Smart-WiFi-Information-Disclosure
+	url = https://github.com/zeropwn/Linksys-Smart-WiFi-Information-Disclosure

@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Jul  8 15:46:13 2022 as: nmap --script=http-headers -p 80 -oA http-headers 192.168.10.1
+Host: 192.168.10.1 (-c)	Status: Up
+Host: 192.168.10.1 (-c)	Ports: 80/open/tcp//http///
+# Nmap done at Fri Jul  8 15:46:13 2022 -- 1 IP address (1 host up) scanned in 0.70 seconds

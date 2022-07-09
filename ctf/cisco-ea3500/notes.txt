@@ -1,0 +1,7 @@
+https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/under-the-hood-linksys-remote-command-injection-vulnerabilities/
+
+https://web.archive.org/web/20200322103652/https://github.com/Qanan/Linksys-JNAP-Siphon/blob/master/jnapsiph.sh
+
+https://github.com/zeropwn/Linksys-Smart-WiFi-Information-Disclosure
+
+https://gist.github.com/roycewilliams/fe5e8030575c0cbd1bcb58ed29f429fc

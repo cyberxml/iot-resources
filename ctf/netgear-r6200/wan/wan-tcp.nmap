@@ -1,0 +1,10 @@
+# Nmap 7.60 scan initiated Fri Jul  8 11:08:35 2022 as: nmap -T4 -sV -oA wan-tcp 10.11.0.56
+Nmap scan report for R6200 (10.11.0.56)
+Host is up (0.0029s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE    VERSION
+8443/tcp open  https-alt?
+MAC Address: 20:E5:2A:19:3F:3A (Netgear)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  8 11:10:50 2022 -- 1 IP address (1 host up) scanned in 134.85 seconds

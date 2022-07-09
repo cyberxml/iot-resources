@@ -1,0 +1,17 @@
+# Nmap 7.60 scan initiated Fri Jul  8 16:15:59 2022 as: nmap -T4 -sV -oA lan-tcp 192.168.1.1
+Nmap scan report for Cisco33941 (192.168.1.1)
+Host is up (0.00026s latency).
+Not shown: 993 closed ports
+PORT      STATE    SERVICE     VERSION
+53/tcp    open     domain      dnsmasq 2.55
+80/tcp    open     http        lighttpd 1.4.28
+139/tcp   open     netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp   filtered https
+445/tcp   open     netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+8083/tcp  open     http        lighttpd 1.4.28
+49152/tcp open     upnp        Portable SDK for UPnP devices 1.6.6 (Linux 2.6.35.8; UPnP 1.0)
+MAC Address: B4:75:0E:38:CA:D0 (Belkin International)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel:2.6.35.8
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  8 16:16:34 2022 -- 1 IP address (1 host up) scanned in 35.66 seconds

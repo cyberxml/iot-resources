@@ -1,0 +1,40 @@
+# Nmap 7.60 scan initiated Fri Jul  8 13:27:13 2022 as: nmap -T4 -sV -oA wan-tcp 10.11.0.2
+Nmap scan report for routerbf79c8 (10.11.0.2)
+Host is up (0.00064s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      Dropbear sshd 2014.65 (protocol 2.0)
+443/tcp  open  ssl/http nginx 1.10.1
+1723/tcp open  pptp     linux (Firmware: 1)
+8007/tcp open  http     Apache httpd
+8008/tcp open  http
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8008-TCP:V=7.60%I=7%D=7/8%Time=62C88521%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,173,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnection:\x20close\r
+SF:\nServer:\x20\r\nDate:\x20Fri,\x2008\x20Jul\x202022\x2023:10:48\x20GMT\
+SF:r\nContent-Length:\x20210\r\nContent-Type:\x20text/html\r\nVary:\x20Acc
+SF:ept-Encoding\r\n\r\n<!DOCTYPE\x20html>\n<html>\n<head>\n<title>404\x20N
+SF:ot\x20Found</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\nThe\x20req
+SF:uested\x20URL\x20/\x20was\x20not\x20found\x20on\x20this\x20server\.\n<h
+SF:r>\n<address>\x20\x20Server\x20at\x20localhost:8008\x20</address>\n</bo
+SF:dy>\n</html>")%r(FourOhFourRequest,196,"HTTP/1\.1\x20404\x20Not\x20Foun
+SF:d\r\nConnection:\x20close\r\nServer:\x20\r\nDate:\x20Fri,\x2008\x20Jul\
+SF:x202022\x2023:10:48\x20GMT\r\nContent-Length:\x20245\r\nContent-Type:\x
+SF:20text/html\r\nVary:\x20Accept-Encoding\r\n\r\n<!DOCTYPE\x20html>\n<htm
+SF:l>\n<head>\n<title>404\x20Not\x20Found</title>\n</head>\n<body>\n<h1>No
+SF:t\x20Found</h1>\nThe\x20requested\x20URL\x20/nice%20ports%2C/Tri%6Eity\
+SF:.txt%2ebak\x20was\x20not\x20found\x20on\x20this\x20server\.\n<hr>\n<add
+SF:ress>\x20\x20Server\x20at\x20localhost:8008\x20</address>\n</body>\n</h
+SF:tml>")%r(HTTPOptions,173,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnectio
+SF:n:\x20close\r\nServer:\x20\r\nDate:\x20Fri,\x2008\x20Jul\x202022\x2023:
+SF:10:59\x20GMT\r\nContent-Length:\x20210\r\nContent-Type:\x20text/html\r\
+SF:nVary:\x20Accept-Encoding\r\n\r\n<!DOCTYPE\x20html>\n<html>\n<head>\n<t
+SF:itle>404\x20Not\x20Found</title>\n</head>\n<body>\n<h1>Not\x20Found</h1
+SF:>\nThe\x20requested\x20URL\x20/\x20was\x20not\x20found\x20on\x20this\x2
+SF:0server\.\n<hr>\n<address>\x20\x20Server\x20at\x20localhost:8008\x20</a
+SF:ddress>\n</body>\n</html>");
+MAC Address: 00:06:F6:BF:79:C9 (Cisco Systems)
+Service Info: Host: local; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  8 13:28:56 2022 -- 1 IP address (1 host up) scanned in 103.30 seconds

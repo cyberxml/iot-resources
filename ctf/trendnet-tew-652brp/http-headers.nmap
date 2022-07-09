@@ -1,0 +1,20 @@
+# Nmap 7.60 scan initiated Fri Jul  8 15:46:13 2022 as: nmap --script=http-headers -p 80 -oA http-headers 192.168.10.1
+Nmap scan report for -c (192.168.10.1)
+Host is up (0.00049s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-headers: 
+|   Server: mini_httpd/1.19 19dec2003
+|   Date: Wed, 01 Sep 2010 00:16:50 GMT
+|   Content-Type: text/html; charset=utf-8
+|   Content-Length: 5000
+|   Cache-Control: max-age=0
+|   Expires: Wed, 01 Sep 2010 00:16:50 GMT
+|   Last-Modified: Fri, 03 Dec 2010 13:00:50 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+MAC Address: 00:14:D1:B7:6B:55 (Trendnet)
+
+# Nmap done at Fri Jul  8 15:46:13 2022 -- 1 IP address (1 host up) scanned in 0.70 seconds

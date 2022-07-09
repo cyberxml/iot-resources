@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Jul  8 11:16:21 2022 as: nmap -sV --script=http-headers -p 8443 -oA wan-8443-headers 10.11.0.56
+Host: 10.11.0.56 (R6200)	Status: Up
+Host: 10.11.0.56 (R6200)	Ports: 8443/open/tcp//https-alt?///
+# Nmap done at Fri Jul  8 11:18:00 2022 -- 1 IP address (1 host up) scanned in 99.49 seconds

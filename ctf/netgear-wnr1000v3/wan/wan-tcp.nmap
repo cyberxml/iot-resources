@@ -1,0 +1,11 @@
+# Nmap 7.60 scan initiated Fri Jul  8 11:24:16 2022 as: nmap -T4 -sV -oA wan-tcp 10.11.0.82
+Nmap scan report for WNR1000v3 (10.11.0.82)
+Host is up (0.00048s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Netgear WNR1000v3 WAP http config
+MAC Address: 74:44:01:31:32:57 (Netgear)
+Service Info: Device: WAP; CPE: cpe:/h:netgear:wnr1000v3
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  8 11:24:28 2022 -- 1 IP address (1 host up) scanned in 11.74 seconds

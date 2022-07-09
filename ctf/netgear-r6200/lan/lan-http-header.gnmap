@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Jul  8 15:26:37 2022 as: nmap --script=http-headers -oA lan-http-header 192.168.1.1
+Host: 192.168.1.1 (_gateway)	Status: Up
+Host: 192.168.1.1 (_gateway)	Ports: 53/open/tcp//domain///, 80/open/tcp//http///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 5000/open/tcp//upnp///, 8200/open/tcp//trivnet1///, 8888/open/tcp//sun-answerbook///, 20005/open/tcp//btx///	Ignored State: closed (992)
+# Nmap done at Fri Jul  8 15:26:55 2022 -- 1 IP address (1 host up) scanned in 18.21 seconds

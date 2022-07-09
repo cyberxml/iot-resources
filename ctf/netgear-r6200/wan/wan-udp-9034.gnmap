@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Jul  8 11:14:16 2022 as: nmap -sU -p 9034 -oA wan-udp-9034 10.11.0.56
+Host: 10.11.0.56 (R6200)	Status: Up
+Host: 10.11.0.56 (R6200)	Ports: 9034/open|filtered/udp//unknown///
+# Nmap done at Fri Jul  8 11:14:17 2022 -- 1 IP address (1 host up) scanned in 0.59 seconds

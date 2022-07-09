@@ -1,0 +1,18 @@
+# Nmap 7.60 scan initiated Fri Jul  8 15:26:37 2022 as: nmap --script=http-headers -oA lan-http-header 192.168.1.1
+Nmap scan report for _gateway (192.168.1.1)
+Host is up (0.0077s latency).
+Not shown: 992 closed ports
+PORT      STATE SERVICE
+53/tcp    open  domain
+80/tcp    open  http
+| http-headers: 
+|_  (Request type: GET)
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+5000/tcp  open  upnp
+8200/tcp  open  trivnet1
+8888/tcp  open  sun-answerbook
+20005/tcp open  btx
+MAC Address: 20:E5:2A:19:3F:39 (Netgear)
+
+# Nmap done at Fri Jul  8 15:26:55 2022 -- 1 IP address (1 host up) scanned in 18.21 seconds

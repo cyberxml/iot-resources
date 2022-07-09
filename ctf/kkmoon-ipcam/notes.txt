@@ -1,0 +1,7 @@
+http:/10.11.0.80
+
+login as admin/admin
+
+settings > system > device information > Browser SD card
+
+read flag.txt

@@ -1,0 +1,30 @@
+# Nmap 7.60 scan initiated Fri Jul  8 12:45:22 2022 as: nmap -T4 -sV -oA wan-tcp 10.11.0.80
+Nmap scan report for IPCAM (10.11.0.80)
+Host is up (0.00055s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Mongoose httpd
+554/tcp  open  rtsp
+1935/tcp open  tcpwrapped
+8080/tcp open  soap       gSOAP 2.8
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port554-TCP:V=7.60%I=7%D=7/8%Time=62C87B58%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,8A,"RTSP/1\.0\x20400\x20Bad\x20Request\r\nCSeq:\x200\r\nServer:\
+SF:x20Hipcam\x20RealServer/V1\.0\r\n\r\nRTSP/1\.0\x20400\x20Bad\x20Request
+SF:\r\nCSeq:\x200\r\nServer:\x20Hipcam\x20RealServer/V1\.0\r\n\r\n")%r(RTS
+SF:PRequest,45,"RTSP/1\.0\x20400\x20Bad\x20Request\r\nCSeq:\x200\r\nServer
+SF::\x20Hipcam\x20RealServer/V1\.0\r\n\r\n")%r(GenericLines,8A,"RTSP/1\.0\
+SF:x20400\x20Bad\x20Request\r\nCSeq:\x200\r\nServer:\x20Hipcam\x20RealServ
+SF:er/V1\.0\r\n\r\nRTSP/1\.0\x20400\x20Bad\x20Request\r\nCSeq:\x200\r\nSer
+SF:ver:\x20Hipcam\x20RealServer/V1\.0\r\n\r\n")%r(HTTPOptions,45,"RTSP/1\.
+SF:0\x20400\x20Bad\x20Request\r\nCSeq:\x200\r\nServer:\x20Hipcam\x20RealSe
+SF:rver/V1\.0\r\n\r\n")%r(FourOhFourRequest,8A,"RTSP/1\.0\x20400\x20Bad\x2
+SF:0Request\r\nCSeq:\x200\r\nServer:\x20Hipcam\x20RealServer/V1\.0\r\n\r\n
+SF:RTSP/1\.0\x20400\x20Bad\x20Request\r\nCSeq:\x200\r\nServer:\x20Hipcam\x
+SF:20RealServer/V1\.0\r\n\r\n")%r(SIPOptions,87,"RTSP/1\.0\x20200\x20OK\r\
+SF:nCSeq:\x2042\r\nServer:\x20Hipcam\x20RealServer/V1\.0\r\nPublic:\x20OPT
+SF:IONS,DESCRIBE,SETUP,TEARDOWN,PLAY,SET_PARAMETER,GET_PARAMETER\r\n\r\n");
+MAC Address: 00:E0:F8:3E:40:8C (Dicna Control AB)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  8 12:46:13 2022 -- 1 IP address (1 host up) scanned in 51.04 seconds

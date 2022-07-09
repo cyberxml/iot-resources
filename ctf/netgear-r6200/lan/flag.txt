@@ -1,0 +1,1 @@
+FLAG{viva_las_vegas}

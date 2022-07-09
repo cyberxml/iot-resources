@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Jul  8 16:13:42 2022 as: nmap -T4 -sV -oA wan-tcp 10.11.0.42
+Host: 10.11.0.42 (Cisco33941)	Status: Up
+Host: 10.11.0.42 (Cisco33941)	Status: Up
+# Nmap done at Fri Jul  8 16:14:04 2022 -- 1 IP address (1 host up) scanned in 21.70 seconds
