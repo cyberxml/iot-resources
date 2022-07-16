@@ -1,0 +1,6 @@
+nmap
+
+web interface
+brute force?
+
+note telnet

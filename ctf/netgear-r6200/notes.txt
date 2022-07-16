@@ -45,7 +45,7 @@ dev    lib    mnt    sbin   tmp    var
 # ls
 flag.txt
 # cat flag.txt 
-FLAG{viva_las_vegas}
+vlv
 # 
 
 

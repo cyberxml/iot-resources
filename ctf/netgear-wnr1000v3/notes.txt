@@ -81,24 +81,3 @@ python2 wnr1000-edb24916.py < NETGEAR_fwpt.cfg  | strings | grep -i pass
 	pppoe_tmp_passwd=
 	pppoe2_passwd=
 
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-

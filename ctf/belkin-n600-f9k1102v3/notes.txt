@@ -1,0 +1,14 @@
+
+http://192.168.2.1/dashboard.htm
+
+Router Info
+Name	Belkin N600DB Wireless Router
+Model	F9K1102 v3 (01)
+Firmware	3.04.06 (Mar 17, 2014)  
+Serial No.	12502GF2300030
+Boot Loader	v0.13
+Intellistream	Off
+
+
+
+cat exploits/hardware/webapps/43682.txt

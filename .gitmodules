@@ -40,3 +40,9 @@
 [submodule "routers/Linksys-Smart-WiFi-Information-Disclosure"]
 	path = routers/Linksys-Smart-WiFi-Information-Disclosure
 	url = https://github.com/zeropwn/Linksys-Smart-WiFi-Information-Disclosure
+[submodule "routers/TP-Link-ArcherC5-RCE"]
+	path = routers/TP-Link-ArcherC5-RCE
+	url = https://github.com/JackDoan/TP-Link-ArcherC5-RCE
+[submodule "gits/gimppy042-exploits"]
+	path = gits/gimppy042-exploits
+	url = https://github.com/Gimppy042/exploits/

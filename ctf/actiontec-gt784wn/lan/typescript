@@ -1,0 +1,1273 @@
+Script started on 2022-07-16 11:20:16-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="138" LINES="60"]
+]777;notify;Command completed;exit\]777;precmd\]0;penne@lt-dev:/data/projects/iot-resources/ctf/actiontec-gt78wn/lan\]7;file://lt-dev.range.lab/data/projects/iot-resources/ctf/actiontec-gt78wn/lan\[?2004h[penne@lt-dev lan]$ telnet 192.168.0.1
+[?2004l]777;preexec\Trying 192.168.0.1...
+Connected to 192.168.0.1.
+Escape character is '^]'.
+BCM96328 Broadband Router
+Login: admin
+Password: 
+ > help
+?
+help
+logout
+exit
+quit
+reboot
+adsl
+xdslctl
+xtm
+brctl
+cat
+loglevel
+logdest
+virtualserver
+ddns
+df
+dumpcfg
+dumpmdm
+meminfo
+psp
+kill
+dnsproxy
+syslog
+echo
+ifconfig
+ping
+ps
+pwd
+sntp
+sysinfo
+tftp
+wlctl
+arp
+defaultgateway
+dhcpserver
+dns
+lan
+lanhosts
+passwd
+ppp
+restoredefault
+route
+save
+swversion
+cfgupdate
+swupdate
+exitOnIdle
+wan
+cwmp
+ > id
+telnetd:error:161.912:processInput:317:unrecognized command id
+ > dumpcnf  fg
+<?xml version="1.0"?>
+<DslCpeConfig version="3.0">
+  <InternetGatewayDevice>
+    <LANDeviceNumberOfEntries>1</LANDeviceNumberOfEntries>
+    <WANDeviceNumberOfEntries>3</WANDeviceNumberOfEntries>
+    <DeviceInfo>
+      <FirstUseDate>0001-01-01T00:00:00Z</FirstUseDate>
+      <VendorConfigFileNumberOfEntries>0</VendorConfigFileNumberOfEntries>
+    </DeviceInfo>
+    <X_BROADCOM_COM_SyslogCfg>
+      <Status>Enabled</Status>
+      <LocalDisplayLevel>Informational</LocalDisplayLevel>
+      <LocalLogLevel>Informational</LocalLogLevel>
+      <RemoteLogLevel>Informational</RemoteLogLevel>
+    </X_BROADCOM_COM_SyslogCfg>
+    <X_BROADCOM_COM_LoginCfg>
+      <AdminPassword>YXZhbGFuY2hlAA==</AdminPassword>
+    </X_BROADCOM_COM_LoginCfg>
+    <X_BROADCOM_COM_AppCfg>
+      <HttpdCfg>
+        <QuickSetupEnabled>FALSE</QuickSetupEnabled>
+      </HttpdCfg>
+    </X_BROADCOM_COM_AppCfg>
+    <X_BROADCOM_COM_EthernetSwitch>
+      <NumberOfVirtualPorts>5</NumberOfVirtualPorts>
+      <EnableVirtualPorts>TRUE</EnableVirtualPorts>
+      <IfName>(null)</IfName>
+    </X_BROADCOM_COM_EthernetSwitch>
+    <ManagementServer>
+      <Username>0026b87b897e</Username>
+      <PeriodicInformTime>1970-01-01T00:13:01+00:00</PeriodicInformTime>
+      <X_Verizon_ConnReqPath>2513a1d3-3609-c25d-5e24-01b4ed750c00</X_Verizon_ConnReqPath>
+      <ConnectionRequestUsername>0026b87b897e</ConnectionRequestUsername>
+    </ManagementServer>
+    <Time>
+      <Enable>TRUE</Enable>
+      <NTPServer1>ntp.actiontec.com</NTPServer1>
+      <NTPServer2>clock.isc.org</NTPServer2>
+      <NTPServer3>ntp0.nl.net</NTPServer3>
+      <LocalTimeZone>-07:00</LocalTimeZone>
+      <LocalTimeZoneName>Pacific Time</LocalTimeZoneName>
+    </Time>
+    <Layer2Bridging>
+      <BridgeNumberOfEntries>4</BridgeNumberOfEntries>
+      <FilterNumberOfEntries>9</FilterNumberOfEntries>
+      <MarkingNumberOfEntries>0</MarkingNumberOfEntries>
+      <AvailableInterfaceNumberOfEntries>9</AvailableInterfaceNumberOfEntries>
+      <Bridge instance="1">
+        <BridgeKey>0</BridgeKey>
+        <BridgeEnable>TRUE</BridgeEnable>
+        <BridgeName>Default</BridgeName>
+      </Bridge>
+      <Bridge instance="2">
+        <BridgeKey>1</BridgeKey>
+        <BridgeName>br1</BridgeName>
+      </Bridge>
+      <Bridge instance="3">
+        <BridgeKey>2</BridgeKey>
+        <BridgeName>br2</BridgeName>
+      </Bridge>
+      <Bridge instance="4">
+        <BridgeKey>3</BridgeKey>
+        <BridgeName>br3</BridgeName>
+      </Bridge>
+      <Bridge nextInstance="5" ></Bridge>
+      <Filter instance="1">
+        <FilterKey>1</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>1</FilterInterface>
+      </Filter>
+      <Filter instance="2">
+        <FilterKey>2</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>2</FilterInterface>
+      </Filter>
+      <Filter instance="3">
+        <FilterKey>3</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>3</FilterInterface>
+      </Filter>
+      <Filter instance="4">
+        <FilterKey>4</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>4</FilterInterface>
+      </Filter>
+      <Filter instance="5">
+        <FilterKey>5</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>5</FilterInterface>
+      </Filter>
+      <Filter instance="6">
+        <FilterKey>6</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>6</FilterInterface>
+      </Filter>
+      <Filter instance="7">
+        <FilterKey>7</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>7</FilterInterface>
+      </Filter>
+      <Filter instance="8">
+        <FilterKey>8</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>8</FilterInterface>
+      </Filter>
+      <Filter instance="9">
+        <FilterKey>9</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>9</FilterInterface>
+      </Filter>
+      <Filter nextInstance="10" ></Filter>
+      <AvailableInterface instance="1">
+        <AvailableInterfaceKey>1</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="2">
+        <AvailableInterfaceKey>2</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="3">
+        <AvailableInterfaceKey>3</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="4">
+        <AvailableInterfaceKey>4</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="5">
+        <AvailableInterfaceKey>5</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_ACTIONTEC_COM_WlanAdapter.WlVirtIntfCfg.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="6">
+        <AvailableInterfaceKey>6</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_ACTIONTEC_COM_WlanAdapter.WlVirtIntfCfg.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="7">
+        <AvailableInterfaceKey>7</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_ACTIONTEC_COM_WlanAdapter.WlVirtIntfCfg.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="8">
+        <AvailableInterfaceKey>8</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_ACTIONTEC_COM_WlanAdapter.WlVirtIntfCfg.4</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="9">
+        <AvailableInterfaceKey>9</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface nextInstance="10" ></AvailableInterface>
+    </Layer2Bridging>
+    <QueueManagement>
+      <ClassificationNumberOfEntries>0</ClassificationNumberOfEntries>
+      <AppNumberOfEntries>0</AppNumberOfEntries>
+      <FlowNumberOfEntries>0</FlowNumberOfEntries>
+      <PolicerNumberOfEntries>0</PolicerNumberOfEntries>
+      <QueueNumberOfEntries>8</QueueNumberOfEntries>
+      <DefaultDSCPMark>-1</DefaultDSCPMark>
+      <Queue instance="1">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <X_BROADCOM_COM_QueueName>WANPrecedence1</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue instance="2">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WANPrecedence2</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue instance="3">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WANPrecedence3</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue instance="4">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WANPrecedence4</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue instance="5">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>LAN</QueueInterface>
+        <X_BROADCOM_COM_QueueName>LANPrecedence1</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue instance="6">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>LAN</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>LANPrecedence2</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue instance="7">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>LAN</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>LANPrecedence3</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue instance="8">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>LAN</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>LANPrecedence4</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+      </Queue>
+      <Queue nextInstance="9" ></Queue>
+    </QueueManagement>
+    <LANConfigSecurity>
+      <ConfigPassword>avalanche</ConfigPassword>
+    </LANConfigSecurity>
+    <LANDevice instance="1">
+      <LANEthernetInterfaceNumberOfEntries>5</LANEthernetInterfaceNumberOfEntries>
+      <LANUSBInterfaceNumberOfEntries>0</LANUSBInterfaceNumberOfEntries>
+      <LANWLANConfigurationNumberOfEntries>4</LANWLANConfigurationNumberOfEntries>
+      <X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>0</X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>
+      <LANHostConfigManagement>
+        <DHCPServerEnable>TRUE</DHCPServerEnable>
+        <MinAddress>192.168.0.2</MinAddress>
+        <MaxAddress>192.168.0.254</MaxAddress>
+        <IPInterfaceNumberOfEntries>1</IPInterfaceNumberOfEntries>
+        <IPInterface instance="1">
+          <Enable>TRUE</Enable>
+          <IPInterfaceIPAddress>192.168.0.1</IPInterfaceIPAddress>
+          <X_BROADCOM_COM_IfName>br0</X_BROADCOM_COM_IfName>
+        </IPInterface>
+        <IPInterface nextInstance="2" ></IPInterface>
+      </LANHostConfigManagement>
+      <LANEthernetInterfaceConfig instance="1">
+        <Enable>TRUE</Enable>
+        <X_BROADCOM_COM_IfName>eth0</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="2">
+        <Enable>TRUE</Enable>
+        <X_BROADCOM_COM_IfName>eth1</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="3">
+        <Enable>TRUE</Enable>
+        <X_BROADCOM_COM_IfName>eth2</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="4">
+        <Enable>TRUE</Enable>
+        <X_BROADCOM_COM_IfName>eth3</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig nextInstance="5" ></LANEthernetInterfaceConfig>
+      <WLANConfiguration instance="1">
+        <MaxBitRate>Auto</MaxBitRate>
+        <Channel>6</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>QSYGF</SSID>
+        <BeaconType>WPAand11i</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>TKIPandAESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>TKIPandAESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <BeaconAdvertisementEnabled>TRUE</BeaconAdvertisementEnabled>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <WMMEnable>TRUE</WMMEnable>
+        <X_BROADCOM_COM_HideSSID>FALSE</X_BROADCOM_COM_HideSSID>
+        <X_BROADCOM_COM_GuestSSID>QSYGF1</X_BROADCOM_COM_GuestSSID>
+        <X_BROADCOM_COM_GuestEnable>FALSE</X_BROADCOM_COM_GuestEnable>
+        <X_BROADCOM_COM_GuestHiden>FALSE</X_BROADCOM_COM_GuestHiden>
+        <X_BROADCOM_COM_GuestIsolateClients>FALSE</X_BROADCOM_COM_GuestIsolateClients>
+        <X_BROADCOM_COM_Guest1SSID>QSYGF2</X_BROADCOM_COM_Guest1SSID>
+        <X_BROADCOM_COM_Guest1Enable>FALSE</X_BROADCOM_COM_Guest1Enable>
+        <X_BROADCOM_COM_Guest1Hiden>FALSE</X_BROADCOM_COM_Guest1Hiden>
+        <X_BROADCOM_COM_Guest1IsolateClients>FALSE</X_BROADCOM_COM_Guest1IsolateClients>
+        <X_BROADCOM_COM_Guest2SSID>QSYGF3</X_BROADCOM_COM_Guest2SSID>
+        <X_BROADCOM_COM_Guest2Enable>FALSE</X_BROADCOM_COM_Guest2Enable>
+        <X_BROADCOM_COM_Guest2Hiden>FALSE</X_BROADCOM_COM_Guest2Hiden>
+        <X_BROADCOM_COM_Guest2IsolateClients>FALSE</X_BROADCOM_COM_Guest2IsolateClients>
+        <WEPKey instance="1">
+          <WEPKey>ff7cbb65ffbf6596e5bad7656a</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>ff7cbb65ffbf6596e5bad7656a</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>ff7cbb63ffbf6595e5bad6656c</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>ff7cbb63ffbf6595e5bad6656c</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>ff7cbb66ffbf6594e5bad6656e</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>ff7cbb66ffbf6594e5bad6656e</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>ff7cbb5fffbf6593e5bad56525</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>ff7cbb5fffbf6593e5bad56525</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>7R3GPQRYVFN6NPFF</PreSharedKey>
+          <KeyPassphrase>7R3GPQRYVFN6NPFF</KeyPassphrase>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+        <X_ACTIONTEC_COM_WlanAdapter>
+          <WlBaseCfg>
+            <WlPhyType>n</WlPhyType>
+            <WlCoreRev>23</WlCoreRev>
+            <WlChannel>0</WlChannel>
+            <WlCurrentChannel>6</WlCurrentChannel>
+            <WlVer>5.60.120.11.cpeNCS01-1.0L8.8</WlVer>
+            <WlAburnSupported>1</WlAburnSupported>
+            <WlAmpduSupported>1</WlAmpduSupported>
+            <WlWmeSupported>1</WlWmeSupported>
+            <WlWmfSupported>1</WlWmfSupported>
+            <WlDefaultKeyWep64Bit>AAFE7ABAFE</WlDefaultKeyWep64Bit>
+            <WlDefaultKeyWep128Bit0>ff7cbb65ffbf6596e5bad7656a</WlDefaultKeyWep128Bit0>
+            <WlDefaultKeyWep128Bit1>ff7cbb63ffbf6595e5bad6656c</WlDefaultKeyWep128Bit1>
+            <WlDefaultKeyWep128Bit2>ff7cbb66ffbf6594e5bad6656e</WlDefaultKeyWep128Bit2>
+            <WlDefaultKeyWep128Bit3>ff7cbb5fffbf6593e5bad56525</WlDefaultKeyWep128Bit3>
+            <WlDefaultKeyPsk0>7R3GPQRYVFN6NPFF</WlDefaultKeyPsk0>
+            <WlDefaultKeyPsk1>ff7cbb63ffbf6595e5bad6656c</WlDefaultKeyPsk1>
+            <WlDefaultKeyPsk2>ff7cbb66ffbf6594e5bad6656e</WlDefaultKeyPsk2>
+            <WlDefaultKeyPsk3>ff7cbb5fffbf6593e5bad56525</WlDefaultKeyPsk3>
+          </WlBaseCfg>
+          <WlStaticWdsCfg instance="1">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="2">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="3">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="4">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg nextInstance="5" ></WlStaticWdsCfg>
+          <WlMimoCfg>
+            <WlNBwCap>0</WlNBwCap>
+            <WlAmsdu>0</WlAmsdu>
+          </WlMimoCfg>
+          <WlVirtIntfCfg instance="1">
+            <WlIdx>0</WlIdx>
+            <WlSsid>QSYGF</WlSsid>
+            <WlBssMacAddr>00:26:B8:7B:89:7D</WlBssMacAddr>
+            <WlWpaPsk>7R3GPQRYVFN6NPFF</WlWpaPsk>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlAuthMode>psk psk2</WlAuthMode>
+            <WlKey64Cfg instance="1">
+              <WlKey64>AAFE7ABAFE</WlKey64>
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+              <WlKey64>AAFD7ABAFD</WlKey64>
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+              <WlKey64>AAFC7ABAFC</WlKey64>
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+              <WlKey64>AAFB7ABAFB</WlKey64>
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+              <WlKey128>873804900AAFE7ABAFE6233342</WlKey128>
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+              <WlKey128>873805000AAFD7ABAFD6233341</WlKey128>
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+              <WlKey128>873805100AAFC7ABAFC6233340</WlKey128>
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+              <WlKey128>873805200AAFB7ABAFB6233339</WlKey128>
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+            <WlWpsCfg>
+              <Wsc_mode>enabled</Wsc_mode>
+            </WlWpsCfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="2">
+            <WlSsid>QSYGF1</WlSsid>
+            <WlIfcname>wl0.1</WlIfcname>
+            <WlBssMacAddr>72:26:b8:7b:89:7e</WlBssMacAddr>
+            <WlWpaPsk>ff7cbb63ffbf6595e5bad6656c</WlWpaPsk>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="3">
+            <WlIdx>2</WlIdx>
+            <WlSsid>QSYGF2</WlSsid>
+            <WlIfcname>wl0.2</WlIfcname>
+            <WlBssMacAddr>72:26:b8:7b:89:7f</WlBssMacAddr>
+            <WlWpaPsk>ff7cbb66ffbf6594e5bad6656e</WlWpaPsk>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="4">
+            <WlIdx>3</WlIdx>
+            <WlSsid>QSYGF3</WlSsid>
+            <WlIfcname>wl0.3</WlIfcname>
+            <WlBssMacAddr>72:26:b8:7b:89:7c</WlBssMacAddr>
+            <WlWpaPsk>ff7cbb5fffbf6593e5bad56525</WlWpaPsk>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg nextInstance="5" ></WlVirtIntfCfg>
+        </X_ACTIONTEC_COM_WlanAdapter>
+      </WLANConfiguration>
+      <WLANConfiguration instance="2">
+        <Enable>FALSE</Enable>
+        <MaxBitRate>Auto</MaxBitRate>
+        <Channel>6</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>QSYGF1</SSID>
+        <BeaconType>Basic</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>TKIPandAESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>TKIPandAESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <BeaconAdvertisementEnabled>TRUE</BeaconAdvertisementEnabled>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <WMMEnable>TRUE</WMMEnable>
+        <X_BROADCOM_COM_HideSSID>FALSE</X_BROADCOM_COM_HideSSID>
+        <X_BROADCOM_COM_GuestSSID>QSYGF1</X_BROADCOM_COM_GuestSSID>
+        <X_BROADCOM_COM_GuestEnable>FALSE</X_BROADCOM_COM_GuestEnable>
+        <X_BROADCOM_COM_GuestHiden>FALSE</X_BROADCOM_COM_GuestHiden>
+        <X_BROADCOM_COM_GuestIsolateClients>FALSE</X_BROADCOM_COM_GuestIsolateClients>
+        <X_BROADCOM_COM_Guest1SSID>QSYGF2</X_BROADCOM_COM_Guest1SSID>
+        <X_BROADCOM_COM_Guest1Enable>FALSE</X_BROADCOM_COM_Guest1Enable>
+        <X_BROADCOM_COM_Guest1Hiden>FALSE</X_BROADCOM_COM_Guest1Hiden>
+        <X_BROADCOM_COM_Guest1IsolateClients>FALSE</X_BROADCOM_COM_Guest1IsolateClients>
+        <X_BROADCOM_COM_Guest2SSID>QSYGF3</X_BROADCOM_COM_Guest2SSID>
+        <X_BROADCOM_COM_Guest2Enable>FALSE</X_BROADCOM_COM_Guest2Enable>
+        <X_BROADCOM_COM_Guest2Hiden>FALSE</X_BROADCOM_COM_Guest2Hiden>
+        <X_BROADCOM_COM_Guest2IsolateClients>FALSE</X_BROADCOM_COM_Guest2IsolateClients>
+        <X_BROADCOM_COM_Guest3SSID>wl0_Guest4</X_BROADCOM_COM_Guest3SSID>
+        <X_BROADCOM_COM_Guest3Enable>FALSE</X_BROADCOM_COM_Guest3Enable>
+        <X_BROADCOM_COM_Guest3Hiden>FALSE</X_BROADCOM_COM_Guest3Hiden>
+        <X_BROADCOM_COM_Guest3IsolateClients>FALSE</X_BROADCOM_COM_Guest3IsolateClients>
+        <WEPKey instance="1">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>ff7cbb63ffbf6595e5bad6656c</PreSharedKey>
+          <KeyPassphrase>7R3GPQRYVFN6NPFF</KeyPassphrase>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+      </WLANConfiguration>
+      <WLANConfiguration instance="3">
+        <Enable>FALSE</Enable>
+        <MaxBitRate>Auto</MaxBitRate>
+        <Channel>6</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>QSYGF2</SSID>
+        <BeaconType>Basic</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>TKIPandAESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>TKIPandAESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <BeaconAdvertisementEnabled>TRUE</BeaconAdvertisementEnabled>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <WMMEnable>TRUE</WMMEnable>
+        <X_BROADCOM_COM_HideSSID>FALSE</X_BROADCOM_COM_HideSSID>
+        <X_BROADCOM_COM_GuestSSID>QSYGF1</X_BROADCOM_COM_GuestSSID>
+        <X_BROADCOM_COM_GuestEnable>FALSE</X_BROADCOM_COM_GuestEnable>
+        <X_BROADCOM_COM_GuestHiden>FALSE</X_BROADCOM_COM_GuestHiden>
+        <X_BROADCOM_COM_GuestIsolateClients>FALSE</X_BROADCOM_COM_GuestIsolateClients>
+        <X_BROADCOM_COM_Guest1SSID>QSYGF2</X_BROADCOM_COM_Guest1SSID>
+        <X_BROADCOM_COM_Guest1Enable>FALSE</X_BROADCOM_COM_Guest1Enable>
+        <X_BROADCOM_COM_Guest1Hiden>FALSE</X_BROADCOM_COM_Guest1Hiden>
+        <X_BROADCOM_COM_Guest1IsolateClients>FALSE</X_BROADCOM_COM_Guest1IsolateClients>
+        <X_BROADCOM_COM_Guest2SSID>QSYGF3</X_BROADCOM_COM_Guest2SSID>
+        <X_BROADCOM_COM_Guest2Enable>FALSE</X_BROADCOM_COM_Guest2Enable>
+        <X_BROADCOM_COM_Guest2Hiden>FALSE</X_BROADCOM_COM_Guest2Hiden>
+        <X_BROADCOM_COM_Guest2IsolateClients>FALSE</X_BROADCOM_COM_Guest2IsolateClients>
+        <X_BROADCOM_COM_Guest3SSID>wl0_Guest4</X_BROADCOM_COM_Guest3SSID>
+        <X_BROADCOM_COM_Guest3Enable>FALSE</X_BROADCOM_COM_Guest3Enable>
+        <X_BROADCOM_COM_Guest3Hiden>FALSE</X_BROADCOM_COM_Guest3Hiden>
+        <X_BROADCOM_COM_Guest3IsolateClients>FALSE</X_BROADCOM_COM_Guest3IsolateClients>
+        <WEPKey instance="1">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>ff7cbb66ffbf6594e5bad6656e</PreSharedKey>
+          <KeyPassphrase>7R3GPQRYVFN6NPFF</KeyPassphrase>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+      </WLANConfiguration>
+      <WLANConfiguration instance="4">
+        <Enable>FALSE</Enable>
+        <MaxBitRate>Auto</MaxBitRate>
+        <Channel>6</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>QSYGF3</SSID>
+        <BeaconType>Basic</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>TKIPandAESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>TKIPandAESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <BeaconAdvertisementEnabled>TRUE</BeaconAdvertisementEnabled>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <WMMEnable>TRUE</WMMEnable>
+        <X_BROADCOM_COM_HideSSID>FALSE</X_BROADCOM_COM_HideSSID>
+        <X_BROADCOM_COM_GuestSSID>QSYGF1</X_BROADCOM_COM_GuestSSID>
+        <X_BROADCOM_COM_GuestEnable>FALSE</X_BROADCOM_COM_GuestEnable>
+        <X_BROADCOM_COM_GuestHiden>FALSE</X_BROADCOM_COM_GuestHiden>
+        <X_BROADCOM_COM_GuestIsolateClients>FALSE</X_BROADCOM_COM_GuestIsolateClients>
+        <X_BROADCOM_COM_Guest1SSID>QSYGF2</X_BROADCOM_COM_Guest1SSID>
+        <X_BROADCOM_COM_Guest1Enable>FALSE</X_BROADCOM_COM_Guest1Enable>
+        <X_BROADCOM_COM_Guest1Hiden>FALSE</X_BROADCOM_COM_Guest1Hiden>
+        <X_BROADCOM_COM_Guest1IsolateClients>FALSE</X_BROADCOM_COM_Guest1IsolateClients>
+        <X_BROADCOM_COM_Guest2SSID>QSYGF3</X_BROADCOM_COM_Guest2SSID>
+        <X_BROADCOM_COM_Guest2Enable>FALSE</X_BROADCOM_COM_Guest2Enable>
+        <X_BROADCOM_COM_Guest2Hiden>FALSE</X_BROADCOM_COM_Guest2Hiden>
+        <X_BROADCOM_COM_Guest2IsolateClients>FALSE</X_BROADCOM_COM_Guest2IsolateClients>
+        <X_BROADCOM_COM_Guest3SSID>wl0_Guest4</X_BROADCOM_COM_Guest3SSID>
+        <X_BROADCOM_COM_Guest3Enable>FALSE</X_BROADCOM_COM_Guest3Enable>
+        <X_BROADCOM_COM_Guest3Hiden>FALSE</X_BROADCOM_COM_Guest3Hiden>
+        <X_BROADCOM_COM_Guest3IsolateClients>FALSE</X_BROADCOM_COM_Guest3IsolateClients>
+        <WEPKey instance="1">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890123</WEPKey>
+          <X_ACTIONTEC_COM_WEPKey>1234567890123</X_ACTIONTEC_COM_WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>ff7cbb5fffbf6593e5bad56525</PreSharedKey>
+          <KeyPassphrase>7R3GPQRYVFN6NPFF</KeyPassphrase>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+      </WLANConfiguration>
+      <WLANConfiguration nextInstance="5" ></WLANConfiguration>
+      <Hosts>
+        <Host nextInstance="4" ></Host>
+      </Hosts>
+    </LANDevice>
+    <LANDevice instance="2">
+      <LANEthernetInterfaceNumberOfEntries>0</LANEthernetInterfaceNumberOfEntries>
+      <LANUSBInterfaceNumberOfEntries>0</LANUSBInterfaceNumberOfEntries>
+      <LANWLANConfigurationNumberOfEntries>0</LANWLANConfigurationNumberOfEntries>
+      <X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>0</X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>
+      <LANHostConfigManagement>
+        <IPInterfaceNumberOfEntries>1</IPInterfaceNumberOfEntries>
+        <IPInterface instance="1">
+          <X_BROADCOM_COM_IfName>br1</X_BROADCOM_COM_IfName>
+        </IPInterface>
+        <IPInterface nextInstance="2" ></IPInterface>
+      </LANHostConfigManagement>
+    </LANDevice>
+    <LANDevice instance="3">
+      <LANEthernetInterfaceNumberOfEntries>0</LANEthernetInterfaceNumberOfEntries>
+      <LANUSBInterfaceNumberOfEntries>0</LANUSBInterfaceNumberOfEntries>
+      <LANWLANConfigurationNumberOfEntries>0</LANWLANConfigurationNumberOfEntries>
+      <X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>0</X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>
+      <LANHostConfigManagement>
+        <IPInterfaceNumberOfEntries>1</IPInterfaceNumberOfEntries>
+        <IPInterface instance="1">
+          <X_BROADCOM_COM_IfName>br2</X_BROADCOM_COM_IfName>
+        </IPInterface>
+        <IPInterface nextInstance="2" ></IPInterface>
+      </LANHostConfigManagement>
+    </LANDevice>
+    <LANDevice instance="4">
+      <LANEthernetInterfaceNumberOfEntries>0</LANEthernetInterfaceNumberOfEntries>
+      <LANUSBInterfaceNumberOfEntries>0</LANUSBInterfaceNumberOfEntries>
+      <LANWLANConfigurationNumberOfEntries>0</LANWLANConfigurationNumberOfEntries>
+      <X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>0</X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>
+      <LANHostConfigManagement>
+        <IPInterfaceNumberOfEntries>1</IPInterfaceNumberOfEntries>
+        <IPInterface instance="1">
+          <X_BROADCOM_COM_IfName>br3</X_BROADCOM_COM_IfName>
+        </IPInterface>
+        <IPInterface nextInstance="2" ></IPInterface>
+      </LANHostConfigManagement>
+    </LANDevice>
+    <LANDevice nextInstance="5" ></LANDevice>
+    <WANDevice instance="1">
+      <WANConnectionNumberOfEntries>1</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>DSL</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="1">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="2">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="3">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="4">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats nextInstance="5" ></X_BROADCOM_COM_XTM_Interface_Stats>
+      <WANDSLInterfaceConfig>
+        <Enable>TRUE</Enable>
+      </WANDSLInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>0</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>1</WANPPPConnectionNumberOfEntries>
+        <WANDSLLinkConfig>
+          <Enable>TRUE</Enable>
+          <LinkType>EoA</LinkType>
+          <X_BROADCOM_COM_ATMEnbQos>TRUE</X_BROADCOM_COM_ATMEnbQos>
+          <X_BROADCOM_COM_GrpPrecedence>8</X_BROADCOM_COM_GrpPrecedence>
+          <X_BROADCOM_COM_IfName>atm0</X_BROADCOM_COM_IfName>
+        </WANDSLLinkConfig>
+        <WANPPPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>pppoe_0_0_35</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <X_BROADCOM_COM_IfName>ppp0</X_BROADCOM_COM_IfName>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_ACTIONTEC_COM_FWExceptionNumberOfEntries>0</X_ACTIONTEC_COM_FWExceptionNumberOfEntries>
+        </WANPPPConnection>
+        <WANPPPConnection nextInstance="2" ></WANPPPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice nextInstance="2" ></WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="2">
+      <WANConnectionNumberOfEntries>0</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>DSL</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="1">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="2">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="3">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="4">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats nextInstance="5" ></X_BROADCOM_COM_XTM_Interface_Stats>
+      <WANDSLInterfaceConfig>
+        <Enable>TRUE</Enable>
+        <LinkEncapsulationUsed>G.992.3_Annex_K_PTM</LinkEncapsulationUsed>
+      </WANDSLInterfaceConfig>
+    </WANDevice>
+    <WANDevice instance="3">
+      <WANConnectionNumberOfEntries>0</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>Ethernet</WANAccessType>
+      </WANCommonInterfaceConfig>
+    </WANDevice>
+    <Layer3Forwarding>
+      <DefaultConnectionService>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1</DefaultConnectionService>
+      <ForwardNumberOfEntries>0</ForwardNumberOfEntries>
+      <X_BROADCOM_COM_DefaultConnectionServices>ppp0</X_BROADCOM_COM_DefaultConnectionServices>
+    </Layer3Forwarding>
+    <X_BROADCOM_COM_NetworkConfig>
+      <DNSIfName>ppp0</DNSIfName>
+    </X_BROADCOM_COM_NetworkConfig>
+  </InternetGatewayDevice>
+</DslCpeConfig>
+dump bytes allocated=262144 used=37171 > swversion
+NCS01-1.0.8
+ > help
+?
+help
+logout
+exit
+quit
+reboot
+adsl
+xdslctl
+xtm
+brctl
+cat
+loglevel
+logdest
+virtualserver
+ddns
+df
+dumpcfg
+dumpmdm
+meminfo
+psp
+kill
+dnsproxy
+syslog
+echo
+ifconfig
+ping
+ps
+pwd
+sntp
+sysinfo
+tftp
+wlctl
+arp
+defaultgateway
+dhcpserver
+dns
+lan
+lanhosts
+passwd
+ppp
+restoredefault
+route
+save
+swversion
+cfgupdate
+swupdate
+exitOnIdle
+wan
+cwmp
+ > ifconfig
+bcmsw           Link encap:Ethernet  HWaddr 00:26:B8:7B:89:7C  
+                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+                RX packets:1723 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:1953 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000 
+                RX bytes:216752 (211.6 KiB)  TX bytes:1318715 (1.2 MiB)
+                Base address:0xda00 
+
+br0             Link encap:Ethernet  HWaddr 00:26:B8:7B:89:7C  
+                inet addr:192.168.0.1  Bcast:192.168.0.255  Mask:255.255.255.0
+                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+                RX packets:1752 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:1959 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:0 
+                RX bytes:189518 (185.0 KiB)  TX bytes:1311209 (1.2 MiB)
+
+eth0            Link encap:Ethernet  HWaddr 00:26:B8:7B:89:7C  
+                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+                RX packets:1723 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:1953 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000 
+                RX bytes:216752 (211.6 KiB)  TX bytes:1318715 (1.2 MiB)
+
+eth1            Link encap:Ethernet  HWaddr 00:26:B8:7B:89:7C  
+                UP BROADCAST MULTICAST  MTU:1500  Metric:1
+                RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000 
+                RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+                
+
+eth2            Link encap:Ethernet  HWaddr 00:26:B8:7B:89:7C  
+                UP BROADCAST MULTICAST  MTU:1500  Metric:1
+                RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000 
+                RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+                
+
+eth3            Link encap:Ethernet  HWaddr 00:26:B8:7B:89:7C  
+                UP BROADCAST MULTICAST  MTU:1500  Metric:1
+                RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000 
+                RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+                
+
+ifb1            Link encap:Ethernet  HWaddr 0E:8A:FA:AA:D7:D2  
+                UP BROADCAST RUNNING NOARP  MTU:1500  Metric:1
+                RX packets:9 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:9 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000 
+                RX bytes:486 (486.0 B)  TX bytes:486 (486.0 B)
+
+lo              Link encap:Local Loopback  
+                inet addr:127.0.0.1  Mask:255.0.0.0
+                UP LOOPBACK RUNNING  MTU:16436  Metric:1
+                RX packets:41 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:41 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:0 
+                RX bytes:6813 (6.6 KiB)  TX bytes:6813 (6.6 KiB)
+
+wl0             Link encap:Ethernet  HWaddr 00:26:B8:7B:89:7D  
+                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+                RX packets:0 errors:0 dropped:0 overruns:0 frame:5418
+                TX packets:0 errors:12 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000 
+                RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+                Interrupt:31 
+
+ > 
+ > echo test
+test
+ > echo    pwd
+/
+ > df -k
+Filesystem           1k-blocks      Used Available Use% Mounted on
+/dev/mtdblock0            5312      5312         0 100% /
+ > mount
+telnetd:error:563.755:processInput:317:unrecognized command mount
+ > to  pwd
+/
+ > cd  ls
+telnetd:error:572.059:processInput:317:unrecognized command ls
+ > dir
+telnetd:error:573.195:processInput:317:unrecognized command dir
+ > cd /root
+telnetd:error:576.035:processInput:317:unrecognized command cd /root
+ > d cd /var
+telnetd:error:587.235:processInput:317:unrecognized command cd /var
+ > cd /tmp
+telnetd:error:589.460:processInput:317:unrecognized command cd /tmp
+ > help
+?
+help
+logout
+exit
+quit
+reboot
+adsl
+xdslctl
+xtm
+brctl
+cat
+loglevel
+logdest
+virtualserver
+ddns
+df
+dumpcfg
+dumpmdm
+meminfo
+psp
+kill
+dnsproxy
+syslog
+echo
+ifconfig
+ping
+ps
+pwd
+sntp
+sysinfo
+tftp
+wlctl
+arp
+defaultgateway
+dhcpserver
+dns
+lan
+lanhosts
+passwd
+ppp
+restoredefault
+route
+save
+swversion
+cfgupdate
+swupdate
+exitOnIdle
+wan
+cwmp
+ > sysinfo
+Number of processes: 47
+ 12:10am  up 10 min, 
+load average: 1 min:0.02, 5 min:0.06, 15 min:0.05
+              total         used         free       shared      buffers
+  Mem:        61092        29364        31728            0         3820
+ Swap:            0            0            0
+Total:        61092        29364        31728
+ > cat   echo "Dall    FLAG{Dl allasS Cowh bos ys}              TexasHoldEm}" > flag.txt
+flag.txt: cannot create
+ > syslog
+
+Usage: syslog dump
+       syslog help
+ >  > syslog[J dump
+==== Dump of Syslog ====
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel:   DMA      0x00000000 -> 0x00001000
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel:   Normal   0x00001000 -> 0x00003f00
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Movable zone start PFN for each node
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: early_node_map[1] active PFN ranges
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel:     0: 0x00000000 -> 0x00003f00
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16002
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.notice kernel: Kernel command line: root=31:0 ro noinitrd console=ttyS0,115200
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: wait instruction: enabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Primary instruction cache 32kB, VIPT, 4-way, linesize 16 bytes.
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Primary data cache 32kB, 2-way, VIPT, cache aliases, linesize 16 bytes
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: RCU-based detection of stalled CPUs is enabled.
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NR_IRQS:128
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: PID hash table entries: 256 (order: 8, 1024 bytes)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: console [ttyS0] enabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Memory: 60956k/64512k available (2136k kernel code, 3536k reserved, 433k data, 116k init, 0k highmem)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Calibrating delay loop... 319.48 BogoMIPS (lpj=159744)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Mount-cache hash table entries: 512
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: net_namespace: 816 bytes
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 16
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Total Flash size: 8192K with 128 sectors
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: registering PCI controller with io_map_base unset
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: registering PCI controller with io_map_base unset
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: bio: create slab <bio-0> at 0
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: pci 0000:01:00.0: PME# supported from D0 D3hot
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: pci 0000:01:00.0: PME# disabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: pci 0000:01:00.0: PCI bridge, secondary bus 0000:02
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: pci 0000:01:00.0:   IO window: disabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: pci 0000:01:00.0:   MEM window: 0x10f00000-0x10ffffff
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: pci 0000:01:00.0:   PREFETCH window: disabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: PCI: Enabling device 0000:01:00.0 (0000 -> 0002)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: BLOG v2.1 Initialized
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 8
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 20
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 2
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: TCP: Hash tables configured (established 2048 bind 2048)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: TCP reno registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 1
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: squashfs: version 4.0 with LZMA457 ported by BRCM
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: msgmni has been set to 119
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: io scheduler noop registered (default)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: pcieport-driver 0000:01:00.0: device [14e4:6328] has invalid IRQ; check vendor BIOS
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: PPP generic driver version 2.4.2
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: PPP Deflate Compression module registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: PPP BSD Compression module registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 24
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: bcm963xx_mtd driver v1.0
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: File system address: 0xb8010100
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: brcmboard: brcm_board_init entry
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: SES: Button Interrupt 0x1 is enabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: SES: LED GPIO 0x1d is enabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: SES: LED GPIO 0x1f is enabled
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Serial: BCM63XX driver $Revision: 1.1.1.1 $
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: ttyS0 at MMIO 0xb0000100 (irq = 36) is a BCM63XX
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: ttyS1 at MMIO 0xb0000120 (irq = 47) is a BCM63XX
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: bcmxtmrt: Broadcom BCM6328B0 ATM/PTM Network Device v0.3 Aug 23 2011 16:02:18
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Broadcom Logger v0.1 Aug 23 2011 16:00:16
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Mirror/redirect action on
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: u32 classifier
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel:     input device check on 
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel:     Actions configured 
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: TCP cubic registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Initializing XFRM netlink socket
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 17
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: NET: Registered protocol family 15
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Initializing MCPD Module
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Ebtables v2.0 registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: _time registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: ebt_ftos registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: ebt_wmm_mark registered
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: 802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: All bugs added by David S. Miller <davem@redhat.com>
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: VFS: Mounted root (squashfs filesystem) readonly on device 31:0.
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Freeing unused kernel memory: 116k freed
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: pktflow: module license 'Proprietary' taints kernel.
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Disabling lock debugging due to kernel taint
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Broadcom Packet Flow Cache  Char Driver v2.1 Jun 11 2010 15:27:43 Registered<242>
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: NBUFF v1.0 Initialized
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Broadcom Packet Flow Cache learning via BLOG enabled.
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Created Proc FS /procfs/fcache
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Broadcom Packet Flow Cache registered with netdev chain
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Constructed Broadcom Packet Flow Cache v2.1 Jun 11 2010 15:27:42
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: bcmxtmcfg: bcmxtmcfg_init entry
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: adsl: adsl_init entry
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: Broadcom BCM6328B0 Ethernet Network Device v0.1 Aug 23 2011 16:00:26
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: ETH Init: 180 tx BDs at 0xa38f6000
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: ETH Init: 400 rx BDs at 0xa39b8000
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: ETH Init: 400 rx BDs at 0xa3a07000
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: dgasp: kerSysRegisterDyingGaspHandler: bcmsw registered 
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: eth0: MAC Address: 00:26:B8:7B:89:7C
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: eth1: MAC Address: 00:26:B8:7B:89:7C
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: eth2: MAC Address: 00:26:B8:7B:89:7C
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: eth3: MAC Address: 00:26:B8:7B:89:7C
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: PCI: Enabling device 0000:02:00.0 (0000 -> 0002)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: --chipid=13a1a8d9
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: wl:srom strapped
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: wl:(srom strapped) probe/present=0
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: wl:srom not detected,using main memory mapped srom info(wombo board)
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: wl:loading /etc/wlan/bcm43225_map.bin
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: wl0: Broadcom BCMa8d8 802.11 Wireless Controller 5.60.120.11.cpeNCS01-1.0L8.8
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: dgasp: kerSysRegisterDyingGaspHandler: wl0 registered 
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.warn kernel: p8021ag: p8021ag_init entry
+(GMT)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: Broadcom 802.1Q VLAN Interface, v0.1
+(GMT-07:00)1970 Thu-Jan  1 00:00:07 (none) user.info kernel: device eth0 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:09 (none) user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+(GMT-07:00)1970 Thu-Jan  1 00:00:09 (none) user.info kernel: device eth1 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:10 (none) user.info kernel: device eth2 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:11 (none) user.info kernel: device eth3 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:11 (none) user.info kernel: device wl0 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:12 (none) user.info kernel: br0: port 5(wl0) entering forwarding state
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: BcmAdsl_Initialize=0xC00D609C, g_pFnNotifyCallback=0xC00FBFE4
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: pSdramPHY=0xA3FFFFF8, 0xFFFFFFFF 0xFFFFFFFF
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: *** PhySdramSize got adjusted: 0x7A754 => 0x902E8 ***
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: AdslCoreSharedMemInit: shareMemAvailable=457968
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: AdslCoreHwReset:  AdslOemDataAddr = 0xA3F70DF8
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: dgasp: kerSysRegisterDyingGaspHandler: dsl0 registered 
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: XTM Init: 400 rx BDs at 0xa30f4000
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.warn kernel: XTM Init: 100 rx BDs at 0xa3317800
+(GMT-07:00)1970 Thu-Jan  1 00:00:13 (none) user.info kernel: monitor task is initialized pid= 193 
+(GMT-07:00)1970 Thu-Jan  1 00:00:15 (none) user.info kernel: device wl0 left promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:15 (none) user.info kernel: br0: port 5(wl0) entering disabled state
+(GMT-07:00)1970 Thu-Jan  1 00:00:15 (none) user.crit kernel: eth0 Link UP 100 mbps full duplex
+(GMT-07:00)1970 Thu-Jan  1 00:00:15 (none) user.info kernel: br0: port 1(eth0) entering forwarding state
+(GMT-07:00)1970 Thu-Jan  1 00:00:15 (none) user.info kernel: device wl0 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:15 (none) user.info kernel: br0: port 5(wl0) entering forwarding state
+(GMT-07:00)1970 Thu-Jan  1 00:00:17 (none) user.warn kernel: BOARD_IOCTL_SET_SES_LED sesLed_ctrl action=0x0
+(GMT-07:00)1970 Thu-Jan  1 00:00:17 (none) user.info kernel: wl0.1 (): not using net_device_ops yet
+(GMT-07:00)1970 Thu-Jan  1 00:00:17 (none) user.info kernel: wl0.2 (): not using net_device_ops yet
+(GMT-07:00)1970 Thu-Jan  1 00:00:17 (none) user.info kernel: wl0.3 (): not using net_device_ops yet
+(GMT-07:00)1970 Thu-Jan  1 00:00:17 (none) user.info kernel: br0: port 5(wl0) entering disabled state
+(GMT-07:00)1970 Thu-Jan  1 00:00:18 (none) daemon.notice syslog: (category:WMM) WMM is enabled, WMM Power Save is enabled
+(GMT-07:00)1970 Thu-Jan  1 00:00:21 (none) user.info kernel: device wl0 left promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:21 (none) user.info kernel: br0: port 5(wl0) entering disabled state
+(GMT-07:00)1970 Thu-Jan  1 00:00:22 (none) user.info kernel: device wl0 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:22 (none) user.info kernel: br0: port 5(wl0) entering forwarding state
+(GMT-07:00)1970 Thu-Jan  1 00:00:27 (none) daemon.info syslog: RENEW IP 192.168.0.2 
+(GMT-07:00)1970 Thu-Jan  1 00:00:27 (none) user.warn kernel: BOARD_IOCTL_SET_SES_LED sesLed_ctrl action=0x0
+(GMT-07:00)1970 Thu-Jan  1 00:00:28 (none) user.warn kernel: BOARD_IOCTL_SET_SES_LED sesLed_ctrl action=0x0
+(GMT-07:00)1970 Thu-Jan  1 00:00:29 (none) user.info kernel: device wl0 left promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:29 (none) user.info kernel: br0: port 5(wl0) entering disabled state
+(GMT-07:00)1970 Thu-Jan  1 00:00:30 (none) user.info kernel: device wl0 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:30 (none) user.info kernel: br0: port 5(wl0) entering forwarding state
+(GMT-07:00)1970 Thu-Jan  1 00:00:30 (none) user.warn kernel: BOARD_IOCTL_SET_SES_LED sesLed_ctrl action=0x0
+(GMT-07:00)1970 Thu-Jan  1 00:00:30 (none) user.info kernel: br0: port 5(wl0) entering disabled state
+(GMT-07:00)1970 Thu-Jan  1 00:00:31 (none) daemon.notice syslog: (category:WMM) WMM is enabled, WMM Power Save is enabled
+(GMT-07:00)1970 Thu-Jan  1 00:00:35 (none) user.info kernel: device wl0 left promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:35 (none) user.info kernel: br0: port 5(wl0) entering disabled state
+(GMT-07:00)1970 Thu-Jan  1 00:00:35 (none) user.info kernel: device wl0 entered promiscuous mode
+(GMT-07:00)1970 Thu-Jan  1 00:00:35 (none) user.info kernel: br0: port 5(wl0) entering forwarding state
+(GMT-07:00)1970 Thu-Jan  1 00:00:40 (none) user.warn kernel: BOARD_IOCTL_SET_SES_LED sesLed_ctrl action=0x0
+(GMT-07:00)1970 Thu-Jan  1 00:00:40 (none) user.warn kernel: BOARD_IOCTL_SET_SES_LED sesLed_ctrl action=0x0
+(GMT-07:00)1970 Thu-Jan  1 00:09:55 (none) user.info kernel: dhcpd uses obsolete (PF_INET,SOCK_PACKET)
+
+ > dmesg
+telnetd:error:703.262:processInput:317:unrecognized command dmesg
+ > help
+?
+help
+logout
+exit
+quit
+reboot
+adsl
+xdslctl
+xtm
+brctl
+cat
+loglevel
+logdest
+virtualserver
+ddns
+df
+dumpcfg
+dumpmdm
+meminfo
+psp
+kill
+dnsproxy
+syslog
+echo
+ifconfig
+ping
+ps
+pwd
+sntp
+sysinfo
+tftp
+wlctl
+arp
+defaultgateway
+dhcpserver
+dns
+lan
+lanhosts
+passwd
+ppp
+restoredefault
+route
+save
+swversion
+cfgupdate
+swupdate
+exitOnIdle
+wan
+cwmp
+ > quit()
+telnetd:error:749.964:processInput:317:unrecognized command quit()
+ > exi t it
+
+Bye bye. Have a nice day!!!
+Connection closed by foreign host.
+]777;notify;Command completed;telnet 192.168.0.1\]777;precmd\]0;penne@lt-dev:/data/projects/iot-resources/ctf/actiontec-gt78wn/lan\]7;file://lt-dev.range.lab/data/projects/iot-resources/ctf/actiontec-gt78wn/lan\[?2004h[penne@lt-dev lan]$ exit
+[?2004l]777;preexec\exit
+
+Script done on 2022-07-16 11:30:33-06:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,28 @@
+# Nmap 7.92 scan initiated Sun Jul 10 08:30:36 2022 as: nmap -T4 -sV -oA lan-tcp 192.168.2.1
+Nmap scan report for _gateway (192.168.2.1)
+Host is up (0.021s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE      VERSION
+53/tcp   open  domain       dnsmasq 2.60
+80/tcp   open  tcpwrapped
+139/tcp  open  microsoft-ds
+445/tcp  open  microsoft-ds
+9000/tcp open  upnp         TwonkyMedia UPnP (UPnP 1.0; pvConnect SDK 1.0; Twonky SDK 1.1)
+9090/tcp open  tcpwrapped
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port139-TCP:V=7.92%I=7%D=7/10%Time=62CAE298%P=x86_64-redhat-linux-gnu%r
+SF:(SMBProgNeg,51,"\0\0\0M\xffSMBr\0\0\0\0\x88\x01@\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0@\x06\0\0\x01\0\x11\x07\0\x03\n\0\x01\0\xff\xff\0\0\xff\xff\0\0\x8
+SF:f\x1a\0\0\|\xe2\0\0PCt\xf1#\xb2\x9d\x01\xe0\x01\x08\x08\0\0\0\0\0\0\0\0
+SF:\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port445-TCP:V=7.92%I=7%D=7/10%Time=62CAE298%P=x86_64-redhat-linux-gnu%r
+SF:(SMBProgNeg,51,"\0\0\0M\xffSMBr\0\0\0\0\x88\x01@\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0@\x06\0\0\x01\0\x11\x07\0\x03\n\0\x01\0\xff\xff\0\0\xff\xff\0\0n\x
+SF:1a\0\0\|\xe2\0\x004\xb0s\xf1#\xb2\x9d\x01\xe0\x01\x08\x08\0\0\0\0\0\0\0
+SF:\0\0");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel:2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 10 08:31:18 2022 -- 1 IP address (1 host up) scanned in 42.22 seconds

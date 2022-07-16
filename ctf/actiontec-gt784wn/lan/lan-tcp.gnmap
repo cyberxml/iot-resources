@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Jul 16 10:54:48 2022 as: nmap -T4 -sV -oA lan-tcp 192.168.0.1
+Host: 192.168.0.1 (_gateway)	Status: Up
+Host: 192.168.0.1 (_gateway)	Ports: 23/open/tcp//telnet//Broadcom BCM96328 ADSL router telnetd/, 80/open/tcp//http//micro_httpd/, 443/open/tcp//ssl|https?///, 4567/open/tcp//tram?///	Ignored State: closed (996)
+# Nmap done at Sat Jul 16 10:56:29 2022 -- 1 IP address (1 host up) scanned in 100.65 seconds

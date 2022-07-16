@@ -1,0 +1,13 @@
+# Nmap 7.92 scan initiated Sat Jul 16 10:54:48 2022 as: nmap -T4 -sV -oA lan-tcp 192.168.0.1
+Nmap scan report for _gateway (192.168.0.1)
+Host is up (0.017s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE    VERSION
+23/tcp   open  telnet     Broadcom BCM96328 ADSL router telnetd
+80/tcp   open  http       micro_httpd
+443/tcp  open  ssl/https?
+4567/tcp open  tram?
+Service Info: Device: broadband router; CPE: cpe:/h:broadcom:bcm96328, cpe:/o:acme:micro_httpd
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 16 10:56:29 2022 -- 1 IP address (1 host up) scanned in 100.65 seconds
