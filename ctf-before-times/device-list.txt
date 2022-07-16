@@ -1,0 +1,123 @@
+TP-Link TL-WR1043ND
+	exploit-db
+		TP-Link TL-WR1043N Router - Cross-Site Reques | hardware/remote/38492.html
+		TP-Link TL-WR1043ND 2 - Authentication Bypass | hardware/webapps/47483.py
+Belkin F5D8236-4v2
+	routersploit
+		belkin/auth_bypass.py | Belkin F5D863
+Trendnet TN-200
+	gits
+		https://github.com/Gimppy042/exploits/
+			https://github.com/Gimppy042/exploits/blob/master/CVE_2013_3098_trendnet_csrf_cmd_inject.html
+			https://github.com/Gimppy042/exploits/blob/master/network_storage_exploits/trendnet_tn200_cve2014_1628.c
+	docs
+		https://www.blackhat.com/docs/us-14/materials/us-14-Holcomb-Network-Attached-Shell-N.A.S.ty-Systems%20That-Store-Network-Accessible-Shells.pdf
+			command injection
+		https://web.archive.org/web/20171011195208/http://infosec42.blogspot.com:80/2015/01/exploit-trendnet-tn-200200-t1-network.html
+D-Link DIR-865L
+	routersploit
+		dlink/multi_hnap_rce.py | D-Link DIR-865L
+	git
+		https://github.com/soh0ro0t/Pwn-Multiple-Dlink-Router-Via-Soap-Proto
+iBaby M3s
+	docs
+		??? M6 https://www.bitdefender.com/files/News/CaseStudies/study/315/Bitdefender-Whitepaper-Severe-Vulnerability-in-iBaby-Monitor-M6S-Camera-interactive.pdf
+			MQTT
+Control4 C4-HC250-BL
+	docs
+		https://weslack.team/post/control4-flag/
+			root 	t0talc0ntr0l4!
+		https://weslack.team/categories/sohoplessly-broken/
+		https://weslack.team/post/control4-flag-2/ (default password)
+	pivot
+		https://weslack.team/post/pivot-notes/ (proxy chains)
+Belkin F7D7301v1
+	routersploit
+		auth_bypass.py | Belkin N300 (F7D7301)
+Asus RT-AC66U
+	exploit-db
+		ASUS Remote Link 1.1.2.13 - Remote Code Execu | windows/remote/49594.py
+	routersploit
+		asus/rt_n16_password_disclosure.py | ASUS RT-AC66U, firmware 3.0.0.4.374_2050
+D-Link DNS-345
+	gits
+		https://github.com/Gimppy042/exploits
+			https://github.com/Gimppy042/exploits/blob/master/network_storage_exploits/dlink_dns345_cve2014_2691.c
+	docs
+		https://www.blackhat.com/docs/us-14/materials/us-14-Holcomb-Network-Attached-Shell-N.A.S.ty-Systems%20That-Store-Network-Accessible-Shells.pdf
+			command injection
+			auth bypass
+PogoPlug Mobile
+	docs:	
+		https://forum.doozan.com/read.php?3,17070,17078 (root|ceadmin)
+		https://exploitee.rs/index.php/PogoPlug_Mobile
+	misc:
+		note: this may be same device as weslack's "pihole"
+			https://weslack.team/post/pihole/
+			https://frichetten.com/blog/cve-2020-11108-pihole-rce/
+		PogoPlug Pro
+			https://pastebin.com/mtiU7Sgc (root|ceadmin)
+Seagate SRN02D
+	gits
+		https://github.com/Gimppy042/exploits
+			https://github.com/Gimppy042/exploits/blob/master/network_storage_exploits/seagate_root_cmd_inject.py
+	docs
+		??? https://www.blackhat.com/docs/us-14/materials/us-14-Holcomb-Network-Attached-Shell-N.A.S.ty-Systems%20That-Store-Network-Accessible-Shells.pdf | backdoor account aka hardcoded pw
+TCP GL30002-TP
+WD My Cloud EX4
+	exploit-db
+		??? Western Digital My Cloud 04.01.03-421/04.01.0 | hardware/webapps/38350.txt
+	docs
+		https://www.blackhat.com/docs/us-14/materials/us-14-Holcomb-Network-Attached-Shell-N.A.S.ty-Systems%20That-Store-Network-Accessible-Shells.pdf
+Netgear ReadyNAS
+	exploit-db
+		Netgear ReadyNAS - Perl Code Evaluation (Meta | hardware/remote/29815.rb
+		Netgear ReadyNAS LAN /dbbroker 6.2.4 - Creden | hardware/webapps/37720.py
+		Netgear ReadyNAS Surveillance 1.4.3-16 - Remo | hardware/webapps/42956.txt
+	docs
+		https://www.blackhat.com/docs/us-14/materials/us-14-Holcomb-Network-Attached-Shell-N.A.S.ty-Systems%20That-Store-Network-Accessible-Shells.pdf
+			command injection
+			csrf
+Cisco Linksys EA6500
+	routersploit
+		./linksys/smartwifi_password_disclosure.py:            "Linksys EA6500 < Ver.1.1.40 (Build 160989)",
+Trendnet TEW-812DRU
+	exploit-db
+		TRENDnet TEW-812DRU - Cross-Site Request Forg | hardware/webapps/27177.html
+Dlink DCS-2132LB1
+	exploit-db
+		https://www.exploit-db.com/exploits/42074 (csrf expolited with flash)
+Motorola Focus73
+	routersploit
+		??? ./cameras/multi/P2P_wificam_credential_disclosure.py:            'Focuscam F19821W',
+		??? ./cameras/multi/P2P_wificam_rce.py:            'Focuscam F19821W',
+Belkin F9K1104v1
+	routersploit
+		belkin/auth_bypass.py | Belkin N900 (F9K1104)
+Veralite
+	exploit-db
+		MiCasaVerde VeraLite - Remote Code Execution  | hardware/remote/40589.html
+		MiCasaVerde VeraLite 1.5.408 - Multiple Vulne | hardware/webapps/27286.txt
+Belkin N900
+	exploit-db
+		??? Belkin N750 - 'jump?login' Remote Buffer Over | hardware/remote/35184.py
+	routersploit
+		belkin/auth_bypass.py | Belkin N900 (F9K1104)
+Netgear WNDR4700
+	routersploit
+		??? netgear/multi_password_disclosure-2017-5521.py:            "Netgear WNDR4500v2",
+ASUS RT-N56U
+	exploit-db
+		Asus RT56U 3.0.0.4.360 - Remote Command Injec | hardware/webapps/25998.txt
+	routersploit
+		asus/rt_n16_password_disclosure.py:            "ASUS RT-N56U, firmware 3.0.0.4.374_979",
+TP LINK TL-WDR4300
+	exploit-db
+		TP-Link WDR4300 - Remote Code Execution (Auth | hardware/remote/48994.py
+TP LINK TL-1043ND
+	exploit-db
+		TP-Link TL-WR1043ND 2 - Authentication Bypass | hardware/webapps/47483.py
+Netgear WNR3500
+	routersploit:
+		netgear/multi_password_disclosure-2017-5521.py:            "Netgear WNR3500Lv2",
+
