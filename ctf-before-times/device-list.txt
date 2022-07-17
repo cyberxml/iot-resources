@@ -1,3 +1,7 @@
+https://blog.welcomethrill.house/2018/08/def-con-26-iot-village-sohopelessly.html
+
+
+
 TP-Link TL-WR1043ND
 	exploit-db
 		TP-Link TL-WR1043N Router - Cross-Site Reques | hardware/remote/38492.html
